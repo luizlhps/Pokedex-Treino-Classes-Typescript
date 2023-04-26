@@ -1,0 +1,113 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+  position: relative;
+
+  margin: auto;
+}
+
+.pokedex {
+  width: 100%;
+  max-width: 425px;
+}
+
+.pokemon img {
+  position: absolute;
+  top: 35%;
+  left: 60%;
+  transform: translate(-100%, 0);
+  height: 20%;
+}
+
+.pokedex-field-name {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: #242424;
+  /* valor minimo 8px / valor ideal 5vw / valor maximo 25px */
+  font-size: clamp(8px, 5vw, 25px);
+  font-weight: 600;
+}
+
+.pokedex-field-name span {
+  align-self: center;
+  margin: 4px;
+}
+
+.pokedex-field-input {
+  position: absolute;
+  top: 67%;
+  left: 13%;
+  border-radius: 0.5rem;
+  width: 62%;
+  height: 5%;
+  background-color: #e3e3e3;
+  box-shadow: -3px 4px 0 #5e5e5e, -5px 7px 0 #333;
+  color: #242424;
+  padding: 1%;
+  font-size: clamp(12px, 5vw, 25px);
+}
+
+.pokedex-button {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 65%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 20px;
+}
+.pokedex-button button {
+  width: 50%;
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+.pokedex-button button:active {
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
+}

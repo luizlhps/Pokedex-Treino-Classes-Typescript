@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="pokemon">
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/2.gif"
+        />
+      </div>
+      <div class="pokedex-field-name">
+        <p class="pokedex-field-number">02</p>
+        <span>-</span>
+        <p class="pokedex-field-pokemon-name">Bulbasaur</p>
+      </div>
+      <form action="submit" id="my-form">
+        <input type="text" class="pokedex-field-input" />
+      </form>
+      <div class="pokedex-button">
+        <button class="btn-next">Next</button>
+        <button class="btn-prev">Prev</button>
+      </div>
+      <img src="./public/pokedex.png" alt="pokedex" class="pokedex" />
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
